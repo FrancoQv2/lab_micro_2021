@@ -1,0 +1,2 @@
+# Para compilar un proyecto se debe definir el nombre del archivo con la ruta en el
+# archivo proyecto.mk y despues utilizar el comando 'make'

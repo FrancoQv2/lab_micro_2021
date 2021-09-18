@@ -1,0 +1,1 @@
+PROYECTO ?= ejemplos/reloj.s

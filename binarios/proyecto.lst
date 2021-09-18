@@ -1,0 +1,261 @@
+
+binarios/proyecto.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+1a000000 <leds_init-0x100>:
+1a000000:	10088000 	.word	0x10088000
+1a000004:	1a000297 	.word	0x1a000297
+1a000008:	1a00028d 	.word	0x1a00028d
+1a00000c:	1a00028d 	.word	0x1a00028d
+1a000010:	1a00028d 	.word	0x1a00028d
+1a000014:	1a00028d 	.word	0x1a00028d
+1a000018:	1a00028d 	.word	0x1a00028d
+	...
+1a00002c:	1a00028d 	.word	0x1a00028d
+	...
+1a000038:	1a00028d 	.word	0x1a00028d
+1a00003c:	1a00028d 	.word	0x1a00028d
+1a000040:	1a00028d 	.word	0x1a00028d
+1a000044:	ffffffff 	.word	0xffffffff
+1a000048:	ffffffff 	.word	0xffffffff
+1a00004c:	ffffffff 	.word	0xffffffff
+1a000050:	ffffffff 	.word	0xffffffff
+1a000054:	ffffffff 	.word	0xffffffff
+1a000058:	ffffffff 	.word	0xffffffff
+1a00005c:	ffffffff 	.word	0xffffffff
+1a000060:	ffffffff 	.word	0xffffffff
+1a000064:	ffffffff 	.word	0xffffffff
+1a000068:	ffffffff 	.word	0xffffffff
+1a00006c:	ffffffff 	.word	0xffffffff
+1a000070:	ffffffff 	.word	0xffffffff
+1a000074:	ffffffff 	.word	0xffffffff
+1a000078:	ffffffff 	.word	0xffffffff
+1a00007c:	ffffffff 	.word	0xffffffff
+1a000080:	ffffffff 	.word	0xffffffff
+1a000084:	ffffffff 	.word	0xffffffff
+1a000088:	ffffffff 	.word	0xffffffff
+1a00008c:	ffffffff 	.word	0xffffffff
+1a000090:	ffffffff 	.word	0xffffffff
+1a000094:	ffffffff 	.word	0xffffffff
+1a000098:	ffffffff 	.word	0xffffffff
+1a00009c:	ffffffff 	.word	0xffffffff
+1a0000a0:	ffffffff 	.word	0xffffffff
+1a0000a4:	ffffffff 	.word	0xffffffff
+1a0000a8:	ffffffff 	.word	0xffffffff
+1a0000ac:	ffffffff 	.word	0xffffffff
+1a0000b0:	ffffffff 	.word	0xffffffff
+1a0000b4:	ffffffff 	.word	0xffffffff
+1a0000b8:	ffffffff 	.word	0xffffffff
+1a0000bc:	ffffffff 	.word	0xffffffff
+1a0000c0:	ffffffff 	.word	0xffffffff
+1a0000c4:	ffffffff 	.word	0xffffffff
+1a0000c8:	ffffffff 	.word	0xffffffff
+1a0000cc:	ffffffff 	.word	0xffffffff
+1a0000d0:	ffffffff 	.word	0xffffffff
+1a0000d4:	ffffffff 	.word	0xffffffff
+1a0000d8:	ffffffff 	.word	0xffffffff
+1a0000dc:	ffffffff 	.word	0xffffffff
+1a0000e0:	ffffffff 	.word	0xffffffff
+1a0000e4:	ffffffff 	.word	0xffffffff
+1a0000e8:	ffffffff 	.word	0xffffffff
+1a0000ec:	ffffffff 	.word	0xffffffff
+1a0000f0:	ffffffff 	.word	0xffffffff
+1a0000f4:	ffffffff 	.word	0xffffffff
+1a0000f8:	ffffffff 	.word	0xffffffff
+1a0000fc:	ffffffff 	.word	0xffffffff
+
+1a000100 <leds_init>:
+1a000100:	f04f 00d4 	mov.w	r0, #212	; 0xd4
+1a000104:	4911      	ldr	r1, [pc, #68]	; (1a00014c <leds_init+0x4c>)
+1a000106:	f841 0b04 	str.w	r0, [r1], #4
+1a00010a:	f841 0b04 	str.w	r0, [r1], #4
+1a00010e:	f841 0b04 	str.w	r0, [r1], #4
+1a000112:	f04f 00d0 	mov.w	r0, #208	; 0xd0
+1a000116:	490e      	ldr	r1, [pc, #56]	; (1a000150 <leds_init+0x50>)
+1a000118:	f841 0b04 	str.w	r0, [r1], #4
+1a00011c:	f841 0b04 	str.w	r0, [r1], #4
+1a000120:	f841 0b04 	str.w	r0, [r1], #4
+1a000124:	f04f 0007 	mov.w	r0, #7
+1a000128:	490a      	ldr	r1, [pc, #40]	; (1a000154 <leds_init+0x54>)
+1a00012a:	6008      	str	r0, [r1, #0]
+1a00012c:	490a      	ldr	r1, [pc, #40]	; (1a000158 <leds_init+0x58>)
+1a00012e:	6008      	str	r0, [r1, #0]
+1a000130:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+1a000134:	4909      	ldr	r1, [pc, #36]	; (1a00015c <leds_init+0x5c>)
+1a000136:	6008      	str	r0, [r1, #0]
+1a000138:	4909      	ldr	r1, [pc, #36]	; (1a000160 <leds_init+0x60>)
+1a00013a:	6008      	str	r0, [r1, #0]
+1a00013c:	f44f 50c0 	mov.w	r0, #6144	; 0x1800
+1a000140:	4908      	ldr	r1, [pc, #32]	; (1a000164 <leds_init+0x64>)
+1a000142:	6008      	str	r0, [r1, #0]
+1a000144:	4908      	ldr	r1, [pc, #32]	; (1a000168 <leds_init+0x68>)
+1a000146:	6008      	str	r0, [r1, #0]
+1a000148:	4770      	bx	lr
+1a00014a:	0000      	.short	0x0000
+1a00014c:	40086100 	.word	0x40086100
+1a000150:	40086128 	.word	0x40086128
+1a000154:	400f6294 	.word	0x400f6294
+1a000158:	400f6014 	.word	0x400f6014
+1a00015c:	400f6280 	.word	0x400f6280
+1a000160:	400f6000 	.word	0x400f6000
+1a000164:	400f6284 	.word	0x400f6284
+1a000168:	400f6004 	.word	0x400f6004
+
+1a00016c <set_led_r>:
+1a00016c:	f04f 0001 	mov.w	r0, #1
+1a000170:	4901      	ldr	r1, [pc, #4]	; (1a000178 <set_led_r+0xc>)
+1a000172:	6008      	str	r0, [r1, #0]
+1a000174:	4770      	bx	lr
+1a000176:	0000      	.short	0x0000
+1a000178:	400f6214 	.word	0x400f6214
+
+1a00017c <clear_led_r>:
+1a00017c:	f04f 0001 	mov.w	r0, #1
+1a000180:	4901      	ldr	r1, [pc, #4]	; (1a000188 <clear_led_r+0xc>)
+1a000182:	6008      	str	r0, [r1, #0]
+1a000184:	4770      	bx	lr
+1a000186:	0000      	.short	0x0000
+1a000188:	400f6294 	.word	0x400f6294
+
+1a00018c <toggle_led_r>:
+1a00018c:	f04f 0001 	mov.w	r0, #1
+1a000190:	4901      	ldr	r1, [pc, #4]	; (1a000198 <toggle_led_r+0xc>)
+1a000192:	6008      	str	r0, [r1, #0]
+1a000194:	4770      	bx	lr
+1a000196:	0000      	.short	0x0000
+1a000198:	400f6314 	.word	0x400f6314
+
+1a00019c <set_led_g>:
+1a00019c:	f04f 0002 	mov.w	r0, #2
+1a0001a0:	4901      	ldr	r1, [pc, #4]	; (1a0001a8 <set_led_g+0xc>)
+1a0001a2:	6008      	str	r0, [r1, #0]
+1a0001a4:	4770      	bx	lr
+1a0001a6:	0000      	.short	0x0000
+1a0001a8:	400f6214 	.word	0x400f6214
+
+1a0001ac <clear_led_g>:
+1a0001ac:	f04f 0002 	mov.w	r0, #2
+1a0001b0:	4901      	ldr	r1, [pc, #4]	; (1a0001b8 <clear_led_g+0xc>)
+1a0001b2:	6008      	str	r0, [r1, #0]
+1a0001b4:	4770      	bx	lr
+1a0001b6:	0000      	.short	0x0000
+1a0001b8:	400f6294 	.word	0x400f6294
+
+1a0001bc <toggle_led_g>:
+1a0001bc:	f04f 0002 	mov.w	r0, #2
+1a0001c0:	4901      	ldr	r1, [pc, #4]	; (1a0001c8 <toggle_led_g+0xc>)
+1a0001c2:	6008      	str	r0, [r1, #0]
+1a0001c4:	4770      	bx	lr
+1a0001c6:	0000      	.short	0x0000
+1a0001c8:	400f6314 	.word	0x400f6314
+
+1a0001cc <set_led_b>:
+1a0001cc:	f04f 0004 	mov.w	r0, #4
+1a0001d0:	4901      	ldr	r1, [pc, #4]	; (1a0001d8 <set_led_b+0xc>)
+1a0001d2:	6008      	str	r0, [r1, #0]
+1a0001d4:	4770      	bx	lr
+1a0001d6:	0000      	.short	0x0000
+1a0001d8:	400f6214 	.word	0x400f6214
+
+1a0001dc <clear_led_b>:
+1a0001dc:	f04f 0004 	mov.w	r0, #4
+1a0001e0:	4901      	ldr	r1, [pc, #4]	; (1a0001e8 <clear_led_b+0xc>)
+1a0001e2:	6008      	str	r0, [r1, #0]
+1a0001e4:	4770      	bx	lr
+1a0001e6:	0000      	.short	0x0000
+1a0001e8:	400f6294 	.word	0x400f6294
+
+1a0001ec <toggle_led_b>:
+1a0001ec:	f04f 0004 	mov.w	r0, #4
+1a0001f0:	4901      	ldr	r1, [pc, #4]	; (1a0001f8 <toggle_led_b+0xc>)
+1a0001f2:	6008      	str	r0, [r1, #0]
+1a0001f4:	4770      	bx	lr
+1a0001f6:	0000      	.short	0x0000
+1a0001f8:	400f6314 	.word	0x400f6314
+
+1a0001fc <set_led_1>:
+1a0001fc:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+1a000200:	4901      	ldr	r1, [pc, #4]	; (1a000208 <set_led_1+0xc>)
+1a000202:	6008      	str	r0, [r1, #0]
+1a000204:	4770      	bx	lr
+1a000206:	0000      	.short	0x0000
+1a000208:	400f6200 	.word	0x400f6200
+
+1a00020c <clear_led_1>:
+1a00020c:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+1a000210:	4901      	ldr	r1, [pc, #4]	; (1a000218 <clear_led_1+0xc>)
+1a000212:	6008      	str	r0, [r1, #0]
+1a000214:	4770      	bx	lr
+1a000216:	0000      	.short	0x0000
+1a000218:	400f6280 	.word	0x400f6280
+
+1a00021c <toggle_led_1>:
+1a00021c:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+1a000220:	4901      	ldr	r1, [pc, #4]	; (1a000228 <toggle_led_1+0xc>)
+1a000222:	6008      	str	r0, [r1, #0]
+1a000224:	4770      	bx	lr
+1a000226:	0000      	.short	0x0000
+1a000228:	400f6300 	.word	0x400f6300
+
+1a00022c <set_led_2>:
+1a00022c:	f44f 6000 	mov.w	r0, #2048	; 0x800
+1a000230:	4901      	ldr	r1, [pc, #4]	; (1a000238 <set_led_2+0xc>)
+1a000232:	6008      	str	r0, [r1, #0]
+1a000234:	4770      	bx	lr
+1a000236:	0000      	.short	0x0000
+1a000238:	400f6204 	.word	0x400f6204
+
+1a00023c <clear_led_2>:
+1a00023c:	f44f 6000 	mov.w	r0, #2048	; 0x800
+1a000240:	4901      	ldr	r1, [pc, #4]	; (1a000248 <clear_led_2+0xc>)
+1a000242:	6008      	str	r0, [r1, #0]
+1a000244:	4770      	bx	lr
+1a000246:	0000      	.short	0x0000
+1a000248:	400f6284 	.word	0x400f6284
+
+1a00024c <toggle_led_2>:
+1a00024c:	f44f 6000 	mov.w	r0, #2048	; 0x800
+1a000250:	4901      	ldr	r1, [pc, #4]	; (1a000258 <toggle_led_2+0xc>)
+1a000252:	6008      	str	r0, [r1, #0]
+1a000254:	4770      	bx	lr
+1a000256:	0000      	.short	0x0000
+1a000258:	400f6304 	.word	0x400f6304
+
+1a00025c <set_led_3>:
+1a00025c:	f44f 5080 	mov.w	r0, #4096	; 0x1000
+1a000260:	4901      	ldr	r1, [pc, #4]	; (1a000268 <set_led_3+0xc>)
+1a000262:	6008      	str	r0, [r1, #0]
+1a000264:	4770      	bx	lr
+1a000266:	0000      	.short	0x0000
+1a000268:	400f6204 	.word	0x400f6204
+
+1a00026c <clear_led_3>:
+1a00026c:	f44f 5080 	mov.w	r0, #4096	; 0x1000
+1a000270:	4901      	ldr	r1, [pc, #4]	; (1a000278 <clear_led_3+0xc>)
+1a000272:	6008      	str	r0, [r1, #0]
+1a000274:	4770      	bx	lr
+1a000276:	0000      	.short	0x0000
+1a000278:	400f6284 	.word	0x400f6284
+
+1a00027c <toggle_led_3>:
+1a00027c:	f44f 5080 	mov.w	r0, #4096	; 0x1000
+1a000280:	4901      	ldr	r1, [pc, #4]	; (1a000288 <toggle_led_3+0xc>)
+1a000282:	6008      	str	r0, [r1, #0]
+1a000284:	4770      	bx	lr
+1a000286:	0000      	.short	0x0000
+1a000288:	400f6304 	.word	0x400f6304
+
+1a00028c <handler>:
+1a00028c:	f7ff ff38 	bl	1a000100 <leds_init>
+1a000290:	f7ff ffb4 	bl	1a0001fc <set_led_1>
+
+1a000294 <loop>:
+1a000294:	e7fe      	b.n	1a000294 <loop>
+
+1a000296 <reset>:
+1a000296:	f7ff ff33 	bl	1a000100 <leds_init>
+1a00029a:	f8df e004 	ldr.w	lr, [pc, #4]	; 1a0002a0 <reset+0xa>
+1a00029e:	4770      	bx	lr
+1a0002a0:	10000001 	.word	0x10000001
