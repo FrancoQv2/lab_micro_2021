@@ -23,60 +23,60 @@ Linker script and memory map
                 0x2000c000                __top_RamAHB16 = 0x2000c000
                 0x20010000                __top_RamAHB_ETB16 = 0x20010000
 
-.text           0x1a000000      0x2a4
+.text.code      0x10000000      0x180
  FILL mask 0xff
- *(.isr_vector)
- .isr_vector    0x1a000000       0x44 binarios/proyecto.o
-                0x1a000100                . = ALIGN (0x100)
- *fill*         0x1a000044       0xbc ff
- *(.text*)
- .text          0x1a000100      0x1a4 binarios/proyecto.o
-                0x1a000296                reset
-                0x1a0002a4                . = ALIGN (0x4)
- *(.constant*)
+ *(.text)
+ .text          0x10000000      0x180 binarios/proyecto.o
+                0x10000000                reset
 
-.glue_7         0x1a0002a4        0x0
- .glue_7        0x1a0002a4        0x0 linker stubs
+.glue_7         0x10000180        0x0
+ .glue_7        0x10000180        0x0 linker stubs
 
-.glue_7t        0x1a0002a4        0x0
- .glue_7t       0x1a0002a4        0x0 linker stubs
+.glue_7t        0x10000180        0x0
+ .glue_7t       0x10000180        0x0 linker stubs
 
-.vfp11_veneer   0x1a0002a4        0x0
- .vfp11_veneer  0x1a0002a4        0x0 linker stubs
+.vfp11_veneer   0x10000180        0x0
+ .vfp11_veneer  0x10000180        0x0 linker stubs
 
-.v4_bx          0x1a0002a4        0x0
- .v4_bx         0x1a0002a4        0x0 linker stubs
+.v4_bx          0x10000180        0x0
+ .v4_bx         0x10000180        0x0 linker stubs
 
-.iplt           0x1a0002a4        0x0
- .iplt          0x1a0002a4        0x0 binarios/proyecto.o
+.iplt           0x10000180        0x0
+ .iplt          0x10000180        0x0 binarios/proyecto.o
 
-.igot.plt       0x1a0002a4        0x0
- .igot.plt      0x1a0002a4        0x0 binarios/proyecto.o
+.igot.plt       0x10000180        0x0
+ .igot.plt      0x10000180        0x0 binarios/proyecto.o
 
-.rel.dyn        0x1a0002a4        0x0
- .rel.iplt      0x1a0002a4        0x0 binarios/proyecto.o
+.rel.dyn        0x10000180        0x0
+ .rel.iplt      0x10000180        0x0 binarios/proyecto.o
 
-.code           0x10088000        0x0
- *(.data*)
- .data          0x10088000        0x0 binarios/proyecto.o
-                0x10088000                . = ALIGN (0x4)
-                0x10088000                PROVIDE (stack, (__top_RamLoc40 - 0x0))
+.text.data      0x10080000      0x101
+ FILL mask 0xff
+ *(.isr)
+ .isr           0x10080000       0xe8 binarios/proyecto.o
+                0x10080100                . = ALIGN (0x100)
+ *fill*         0x100800e8       0x18 ff
+ FILL mask 0xff
+ *(.data)
+ .data          0x10080100        0x1 binarios/proyecto.o
+                0x10088000                PROVIDE (stack = (__top_RamLoc40 - 0x0))
 LOAD binarios/proyecto.o
 OUTPUT(binarios/proyecto.elf elf32-littlearm)
+LOAD linker stubs
 
-.bss            0x10088000        0x0
- .bss           0x10088000        0x0 binarios/proyecto.o
+.bss            0x10080101        0x0
+ .bss           0x10080101        0x0 binarios/proyecto.o
 
 .ARM.attributes
                 0x00000000       0x21
  .ARM.attributes
                 0x00000000       0x21 binarios/proyecto.o
 
-.debug_line     0x00000000       0xdd
- .debug_line    0x00000000       0xdd binarios/proyecto.o
+.debug_line     0x00000000       0xd8
+ .debug_line    0x00000000       0xd8 binarios/proyecto.o
 
-.debug_info     0x00000000       0x56
- .debug_info    0x00000000       0x56 binarios/proyecto.o
+.debug_info     0x00000000       0x26
+ .debug_info    0x00000000       0x26 binarios/proyecto.o
 
 .debug_abbrev   0x00000000       0x14
  .debug_abbrev  0x00000000       0x14 binarios/proyecto.o
@@ -84,3 +84,6 @@ OUTPUT(binarios/proyecto.elf elf32-littlearm)
 .debug_aranges  0x00000000       0x20
  .debug_aranges
                 0x00000000       0x20 binarios/proyecto.o
+
+.debug_str      0x00000000       0x47
+ .debug_str     0x00000000       0x47 binarios/proyecto.o

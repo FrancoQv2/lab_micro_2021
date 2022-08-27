@@ -56,7 +56,7 @@
     .equ CCR,                       0xE000ED14
     .equ SHPR1,                     0xE000ED18
     .equ SHPR2,                     0xE000ED1C
-    .equ SHPR3,                     0xE000ED20
+    .equ SHPR3,                     0xE000ED20          // Registro de prioridades(?)
     .equ SHCSR,                     0xE000ED24
     .equ CFSR,                      0xE000ED28
     .equ HFSR,                      0xE000ED2C
@@ -429,8 +429,9 @@
 
 /* === TIMER (Timers) ===================================================== */
 
-    .equ CEN,                       (1 <<  0)
-    .equ CRST,                      (1 <<  1)
+    // TCR
+    .equ CEN,                       (1 <<  0)           // 1 cuenta, 0 parado
+    .equ CRST,                      (1 <<  1)           // reset TC=0 ^ PC=0
 
     .equ MR0I,                      (1 <<  0)
     .equ MR0R,                      (1 <<  1)

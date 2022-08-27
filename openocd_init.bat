@@ -1,0 +1,1 @@
+openocd.exe -c gdb_port 50000 -c tcl_port 50001 -c telnet_port 50002 -s C:\Users\franc\Documents\lab_micro_2021 -f C:\Users\franc\Documents\lab_micro_2021\configuraciones\ciaa-nxp.cfg

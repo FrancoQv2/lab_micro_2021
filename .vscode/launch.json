@@ -6,10 +6,12 @@
             "request": "launch",
             "servertype": "openocd",
             "cwd": "${workspaceRoot}",
+            // "executable": "binarios\\proyecto.elf",
             "executable": "binarios/proyecto.elf",
             "name": "Debug (OpenOCD)",
             "device": "LPC4337_M4",
             "configFiles": [
+                // "${workspaceRoot}\\configuraciones\\ciaa-nxp.cfg"
                 "${workspaceRoot}/configuraciones/ciaa-nxp.cfg"
             ],
 //            "svdFile": "${workspaceFolder}/scripts/openocd/LPC43xx_43Sxx.svd",

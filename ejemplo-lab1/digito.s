@@ -115,7 +115,7 @@
     .word   0               // 12: Reserved entry
     .word   0               // 13: Reserved entry
     .word   handler+1       // 14: Pending service system trap service routine
-    .word   handler+1      // 15: System tick service routine
+    .word   handler+1       // 15: System tick service routine
     .word   handler+1       // 16: Interrupt IRQ service routine
 
 /****************************************************************************/
